@@ -56,6 +56,9 @@ else
     fgc_interval=0
 fi
 
+# 显示包名或者主类名
+jcmd | grep $1
+
 # 进程运行时间
 echo "Process($1)'s elapsed time is $etime"
 
